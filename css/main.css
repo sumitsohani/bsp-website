@@ -248,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
   border-bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px;
+  padding-bottom: 10px;
 }
 
 #navigation .navbar-toggle{
@@ -265,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navigation .navbar-nav.navbar-right {
-	padding-top:18px;
+	padding-top:20px;
 }
 
 #navigation .navbar-nav.navbar-right li a {
