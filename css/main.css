@@ -630,6 +630,17 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat: no-repeat
 }
 
+#mentorapp {
+  background-image: url("../images/studentapps/mentor_app.png");
+  color:#fff;
+  text-align:center;
+  height: 100%
+  background-color:	#0A0A13;
+  background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat
+}
+
 .services {
 	display:block;
 	overflow:hidden;
