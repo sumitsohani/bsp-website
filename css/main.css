@@ -672,7 +672,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-service:hover {
-	background-color: #fc7700;
+	background-color: rgba(252,119,0, 0.39)
 }
 
 .single-service:hover i {
