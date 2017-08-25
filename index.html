@@ -15,11 +15,6 @@
 	<link href="css/responsive.css" rel="stylesheet"> 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
 	<script src="js/respond.min.js"></script> <![endif]--> 
-	<link rel="shortcut icon" href="images/ico/favicon.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
 	<div class="preloader">
@@ -49,9 +44,10 @@
 					<ul class="nav navbar-nav navbar-right"> 
 						<li class="scroll active"><a href="#navigation">Home</a></li> 
 						<li class="scroll"><a href="#about-us">About Us</a></li> 
-						<li class="scroll"><a href="#services">Fall 2017 Schedule</a></li> 
-						<li class="scroll"><a href="#our-team">Student Applications</a></li>
+						<li class="scroll"><a href="#lessons">Fall 2017 Schedule</a></li> 
+						<li class="scroll"><a href="#services">Student Application</a></li>
 						<li class="scroll"><a href="#our-team">Mentors</a></li> 
+						<li class="scroll"><a href="#our-team">Mentor Application</a></li> 
 						<li class="scroll"><a href="#contact">Location and Contact</a></li> 
 					</ul> 
 				</div> 
@@ -61,19 +57,30 @@
 
 	<section id="home">
 		<div class="home-tint"></div>
-		<div id="main-carousel" class="carousel slide" data-ride="carousel"> 
+		<div id="main-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#main-carousel" data-slide-to="1"></li>
+			</ol>
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/bsp_cover.jpg)"> 
 					<div class="carousel-caption"> 
 						<div> 
 							<h2 class="heading animated bounceInDown">Brown Science Prep</h2> 
 							<p class="animated bounceInUp">Making science fun for high school students in Providence!</p> 
-							<!--<a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> -->
 						</div> 
+					</div> 
+				</div>
+				<div class="item" style="background-image: url(images/slider/apps.jpg)"> 
+					<div class="carousel-caption"> <div> 
+						<h2 class="heading animated bounceInDown">Fall 2017 Mentor Applications Now Open!</h2> 
+						<p class="animated bounceInUp">Due Thursday, September 14</p> <a class="btn btn-default slider-btn animated fadeIn" href="https://form.jotform.com/72328559184162">Apply Now!</a> 
 					</div> 
 				</div>
 			</div> 
 		</div><!--/.carousel-inner-->
+		<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 	</div> 
 
 </section><!--/#home-->
@@ -95,12 +102,37 @@
 	</div>
 </section><!--/#about-us-->
 
+<section id="lessons"> 
+<div class="container">
+	<div class="row text-center clearfix">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h2 class="title-one">Fall 2017 Lessons</h2>
+			<p class="blog-heading">Check back soon for the full schedule!</p>
+		</div>
+	</div> 
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="single-blog">
+				<img src="images/blog/eclipse.jpg" alt="" />
+				<h2>First Lesson!</h2>
+				<ul class="post-meta">
+					<li><i class="fa fa-clock-o"></i> September 23, 2017</li>
+					<li><i class="fa fa-map-marker"></i><strong> Location:</strong> Wilson Hall</li>
+				</ul>
+				<div class="blog-content">
+					<p>Come join BSP for our awesome first lesson of the year!</p>
+				</div>
+			</div>
+		</div>
+	</div> 
+</section> <!--/#blog-->
+
 <section id="services" class="parallax-section">
 	<div class="container">
 		<div class="row text-center">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">Services</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				<h2 class="title-one">Become a part of BSP!</h2>
+				<p>To join our program, simply fill out the forms below and bring them to the next Saturday lesson.  There is no fee associated with the program. Feel free to contact us with any questions. </p>
 			</div>
 		</div>
 		<div class="row">
@@ -135,232 +167,6 @@
 	</div>
 </section><!--/#service-->
 
-
-<section id="portfolio">
-	<div class="container">
-		<div class="row text-center">
-			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">Portfolio</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-			</div>
-		</div>
-		<ul class="portfolio-filter text-center">
-			<li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-			<li><a class="btn btn-default" href="#" data-filter=".html">Html</a></li>
-			<li><a class="btn btn-default" href="#" data-filter=".wordpress">Wordpress</a></li>
-			<li><a class="btn btn-default" href="#" data-filter=".joomla">Joomla</a></li>
-			<li><a class="btn btn-default" href="#" data-filter=".megento">Megento</a></li>
-		</ul><!--/#portfolio-filter-->
-		<div class="portfolio-items">
-			<div class="col-sm-3 col-xs-12 portfolio-item html">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="images/portfolio/1.jpg" alt=""></div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item jooma">
-					<div class="view efffect" >
-						<div class="portfolio-image">
-							<img src="images/portfolio/2.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="images/portfolio/3.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item megento">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="images/portfolio/4.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item html">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="images/portfolio/5.jpg" alt="">
-					</div> <div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="images/portfolio/6.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item html">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="images/portfolio/7.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="images/portfolio/8.jpg" alt=""></div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item html">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="images/portfolio/9.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="images/portfolio/10.jpg" alt=""></div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="images/portfolio/11.jpg" alt=""></div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/portfolio/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 portfolio-item megento">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/12.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</div>
-	</div>
-</section> <!--/#portfolio-->
-
-<section id="clients" class="parallax-section">
-	<div class="container">
-		<div class="clients-wrapper">
-			<div class="row text-center">
-				<div class="col-sm-8 col-sm-offset-2">
-					<h2 class="title-one">Clients Say About Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-				</div>
-			</div>
-			<div id="clients-carousel" class="carousel slide" data-ride="carousel"> <!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#clients-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#clients-carousel" data-slide-to="1"></li>
-					<li data-target="#clients-carousel" data-slide-to="2"></li>
-				</ol> <!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<div class="single-client">
-							<div class="media">
-								<img class="pull-left" src="images/clients/client1.jpg" alt="">
-								<div class="media-body">
-									<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="single-client">
-							<div class="media">
-								<img class="pull-left" src="images/clients/client3.jpg" alt="">
-								<div class="media-body">
-									<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="single-client">
-							<div class="media">
-								<img class="pull-left" src="images/clients/client2.jpg" alt="">
-								<div class="media-body">
-									<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section><!--/#clients-->
-
 <section id="our-team">
 	<div class="container">
 		<div class="row text-center">
@@ -373,36 +179,132 @@
 			<a class="member-right" href="#team-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			<div class="carousel-inner team-members">
 				<div class="row item active">
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-4">
 						<div class="single-member">
-							<img src="images/our-team/member1.jpg" alt="team member" />
-							<h4>William Hurt</h4>
-							<h5>Sr. Web Developer</h5>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+							<img src="images/our-team/ryan.jpg" alt="team member" />
+							<h4 class="description-header">Ryan Bahar, '18</h4>
+							<h5 class="description-header">Coordinator</h5>
+							<p class="description">Hey y'all! I'm Ryan, and I study neurobiochemistry here at Brown. I love to teach science as well as use science to problem solve in everyday life. When I'm not obsessing over the phrase "life is but an expression of proteins" or thinking about the seven billion billion billion atoms in the human body (and don't get me started on the Universe...), I am usually doing one of three things: drinking all the smoothies the world has to offer, getting totally lost in the mountains of northern New England, or trying to telepathically communicate with my two cats back home. With your help, my goal is to make this year of BSP the best one yet!</p>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-4">
 						<div class="single-member">
-							<img src="images/our-team/member2.jpg" alt="team member" />
-							<h4>Alekjandra Jony</h4>
-							<h5>Creative Designer</h5>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+							<img src="images/our-team/shirley.png" alt="team member" />
+							<h4 class="description-header">Shirley Lin, '19</h4>
+							<h5 class="description-header">Coordinator</h5>
+							<p class="description">Aloha, I'm Shirley Lin, a current sophomore concentrating in Biology. With my education here, I hope to go to medical school one day. I'm from the island of O'ahu in Hawai'i and my favorite thing to do is drive to the North Shore and eat local food (check out Giovanni's Shrimp Truck and Matsumoto's Shave Ice). My second favorite thing to do is try to get mainlanders to say the name of our state fish, the humuhumunukunukuapua'a. I'm a huge advocate of converting people from saying "flip-flops" to "slippers". My main goal here at Brown is to survive the winter. My spirit animal is a seal or maybe a thumb, but I'm also fond of ostriches, emus, vultures, and various other ugly birds. Mahalo for reading. Shoots.</p>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-4">
 						<div class="single-member">
-							<img src="images/our-team/member3.jpg" alt="team member" />
-							<h4>Paul Johnson</h4>
-							<h5>Skilled Programmer</h5>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+							<img src="images/our-team/sumit.png" alt="team member" />
+							<h4 class="description-header">Sumit Sohani, '19</h4>
+							<h5 class="description-header">Coordinator</h5>
+							<p class="description">Hey what's up hello y'all! My name is Sumit Sohani, and I'm a sophomore from Atlanta, Georgia. (Go Falcons!) Even though my concentration is currently a somewhat un-sciency Comp Sci and Econ, I still love exploring and teaching science through BSP. Outside of being a part of the BSP fam, I'm a chess player, older brother, Taylor Swift fan, and avid Waffle House frequenter. </p>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+				</div>
+				<div class="row item">
+					<div class="col-sm-6 col-md-4">
 						<div class="single-member">
-							<img src="images/our-team/member4.jpg" alt="team member" />
-							<h4>John Richerds</h4>
-							<h5>Marketing Officer</h5>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+							<img src="images/our-team/brian.jpg" alt="team member" />
+							<h4 class="description-header">Brian Zhao '19</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hello! My name is Brian Zhao and I am a sophomore thinking of concentrating in chemistry. I am from New York City and love all things food-related. When I’m not eating, I am part of the Chinese Student Association here at Brown and like to run in my free time. I am also interested in poetry so please tell me your favorite poets if you ever run into me! I have also worked in a pharmacology lab in high school and have dissected a pregnant cat before (it was pretty disgusting but super interesting).</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/ankush.png" alt="team member" />
+							<h4 class="description-header">Ankush Bajaj '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hi there! I’m Ankush Bajaj, and I’m a freshman thinking of concentrating in Neuroscience. This is my first year as a mentor with Brown Science Prep! I’m from Chicago, Illinois and hope to pursue a career in medicine (my main interest is in neuroscience). Apart from BSP, I’m also a member of Brown’s quizbowl team and an avid reader. I also love to eat, so you may see me downing slice after slice of pizza in Andrews dining commons.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/shoshana.png" alt="team member" />
+							<h4 class="description-header">Shoshana Simons '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hi guys! I’m Shoshana, a first-year whose current interests are too all-over-the-place to have a concentration (though if I were you, I’d put my money on Computer Science). I’m from Florida, so pardon my confusion when it’s fifty degrees out and not snowing. When I’m not doing BSP, I’m probably deleting emails—as a first-year, I take pride in being on too many listservs. I’m also really into thought experiments, computational linguistics, music, and political activism, and I’m super excited for this all-over-the-place list to grow throughout my experience with BSP. </p>
+						</div>
+					</div>
+				</div>
+				<div class="row item">
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/greg.png" alt="team member" />
+							<h4 class="description-header">Greg Benitez '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hello! My name is Greg Benitez and I am a first-year here at Brown. Settling in has been fairly easy as I live only 15 minutes away from Brown's campus in Pawtucket, Rhode Island. As of now, I am on the fence of either concentrating in Computational Biology or Biochemistry/Molecular Biology but luckily for me, I have a lot of time to make a decision. While I am not studying, I love to play soccer, ultimate frisbee, play FIFA, and of course, eat food. I am eager to share my passion for science with the rest of you!</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/joy.png" alt="team member" />
+							<h4 class="description-header">Joy Jiang '19</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">I'm Joy, and I'm a sophomore from Massachusetts concentrating in Biology. This is my second year with BSP! Apart from learning science, I love running, dancing, reading the NY Times, and watching Spongebob. When I'm not getting lost on my long runs around Providence, I am most likely FaceTiming my 8 chickens back home.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/valerie.png" alt="team member" />
+							<h4 class="description-header">Valerie Estela, 3rd year PhD</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">I am a 3rd year PhD Candidate in Neuroscience researching the mechanisms of learning and memory. In my research I get to use really cool techniques like in vivo electrophysiology, where we can record and analyze electrical activity within the brain of an animal performing a memory task, as well as optogenetics, where we can use a virus to make brain areas turn on or off with light! I love teaching and hope to become a professor after finishing my PhD. When I'm not in the lab, I'm probably kickboxing, playing ultimate frisbee, or loving on my two kitties! </p>
+						</div>
+					</div>
+				</div>
+				<div class="row item">
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/shawn.jpg" alt="team member" />
+							<h4 class="description-header">Shawn Young '19</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hey! My name is Shawn Young, and I'm a Freshman, possible Biology and Public Policy concentrator, and an avid lover of McDonald's 2 for $3 breakfast sandwich deals. I'm from the wonderful state of New Jersey, home of taylor ham (think SPAM but more edible) and highway exits. On campus, I'm involved with the Brown Daily Herald and the Undergraduate Council of Students. When I have free time, I like to play in jam sessions on bass and ukelele, sometimes at the same time, and binge watch Supernatural on Netflix.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/tom.jpg" alt="team member" />
+							<h4 class="description-header">Tom Skipper '19</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">I’m a sophomore studying Biomedical Engineering, which is basically the ideal concentration for an indecisive science nerd! I currently live in Connecticut but I was born in England and go back to see family a lot. In my spare time I like to hike, play on the club tennis team, and obsess over English Premier League soccer (I’m a massive Manchester United fan). I also love to read, drink tea, listen to as much music as possible, and run (though not all at the same time). I’m really excited to join the BSP team!</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/stephanie.jpg" alt="team member" />
+							<h4 class="description-header">Stephanie Adaniya '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hello! My name is Stephanie Adaniya but my friends call me Steph or Staph infection (it’s a long story). I’m all the way from Hawaii so these New England winters are quite the struggle. I don’t have a concentration yet but I really like proteins, chem labs, and rocks. So I’ll probably end up in something like geology-chemistry or biochemistry. When I’m not in the Sciences Library, you can probably find me hitting some taiko drums or coaching Science Olympiad (I LOVE Science Olympiad).</p>
+						</div>
+					</div>
+				</div>
+				<div class="row item">
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/ruixi.jpg" alt="team member" />
+							<h4 class="description-header">RuiXi Seet '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hello! I'm RuiXi, a freshman from Melaka, a town in Malaysia thinking of concentrating in Physics. In my free time, I enjoy reading, long walks (even if it's the concrete jungle of Providence and not the Black Forest in Germany where I went for high school) and watching PhysicsGirl/Simone Giertz (she makes really cool albeit dysfunctional robots!) videos on youtube. I also enjoy singing and playing the ukulele.This is my first year with BSP and I'm so excited to work with you!</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/amy.jpg" alt="team member" />
+							<h4 class="description-header">Amy Huang '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hey ya'll. I'm a first year from Texas who is pretty sure about concentrating in computer science--though I'm not sure what I want to do with tech. In high school I played viola in orchestra and did visual arts most of the time, but right now I'm doing neither of those things. Instead, I have a job, volunteer with the Classical Coding Club sponsored by the CS department and do BSP! For fun I like to surf Quora and academia twitter, wikipedia strange things and explore downtown.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="single-member">
+							<img src="images/our-team/harini.jpg" alt="team member" />
+							<h4 class="description-header">Harini Balakrishnan '20</h4>
+							<h5 class="description-header">Mentor</h5>
+							<p class="description">Hello! I’m Harini, and I’m a first-year thinking of concentrating in economics here at Brown, but I’m also interested in going into medicine. This is my first semester with BSP! I’m from Houston, Texas, so getting through the winter is a big accomplishment for me. Outside of BSP, I’m also involved with the Brown Chess Club and I volunteer at a local clinic in Providence. In my free time, you can find me walking to Andrews for a panini, listening to ALL the music, or just being very excited about fellow Houstonian Beyoncé.</p>
 						</div>
 					</div>
 				</div>
@@ -410,6 +312,8 @@
 		</div>
 	</div>
 </section><!--/#Our-Team-->
+
+
 
 <section id="contact">
 	<div class="container">

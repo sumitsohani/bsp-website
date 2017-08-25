@@ -316,6 +316,16 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0.4
 }
 
+.section-tint {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7)
+}
+
 #home{
   padding: 0;
   overflow: hidden;
@@ -610,10 +620,14 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #services {
-  background-image: url("../images/services/service-bg.jpg");
+  background-image: url("../images/studentapps/bg_dark.png");
   color:#fff;
   text-align:center;
+  height: 100%
   background-color:	#0A0A13;
+  background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat
 }
 
 .services {
@@ -680,7 +694,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #our-team {
-	background-color:#f6f6f6;
+	background-color:#fff;
 	color:#43484E;
 }
 
@@ -698,16 +712,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-member {
 	height:430px;
-	background-color:#43484E;
-	border: 1px solid #43484E;
+	background-color:#F6f6f6;
+	/*border: 1px solid #43484E;*/
 	color: #f6f6f6;
 	padding: 25px;
 	text-align:center;
 	overflow:hidden;
 }
 
+.description {
+	font-size:11px;
+	text-align:left;
+	color: #43484E;
+}
+
+.description-header {
+	color: black;
+}
+
 .single-member img {
-	width:100%
+	width:50%
 }
 
 .single-member h4, 
@@ -1052,7 +1076,7 @@ h1, h2, h3, h4, h5, h6 {
 ======Our Blog CSS=====
 ======================*/
 
-#blog {
+#lessons {
 	padding-bottom:75px;
 	padding-top:75px
 }
@@ -1170,7 +1194,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f6f6f6;
 	position:relative;
 	padding-bottom:85px;
-	border-top:2px solid #ddd
+	/*border-top:2px solid #ddd*/
 }
 
 #contact .contact-heading {
