@@ -1131,6 +1131,10 @@ h1, h2, h3, h4, h5, h6 {
 	color:#fff
 }
 
+.single-blog-next h2 {
+	color:#fff;
+}
+
 .single-blog:hover.single-blog .btn-primary {
 	background-color:#fc7700;
 	color:#fff;
