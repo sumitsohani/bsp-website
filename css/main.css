@@ -1166,11 +1166,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-blog ul li {
-	border-right: 2px solid #999999;
 	float: left;
 	line-height: 10px;
 	list-style: none;
-	margin-right: 10px;
 	padding-right: 10px;
 	font-size: 12px;
 	color:#999;
